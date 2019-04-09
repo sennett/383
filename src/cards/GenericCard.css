@@ -1,4 +1,29 @@
 .generic-card {
-    border: solid 1px black;
+    border: solid 1px grey;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
+.generic-card__tag {
+    position: absolute;
+    height: 5rem;
+    width: 4rem;
+    margin-top: -2rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-family: serif;
+    font-size:1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 0.5rem;
+    overflow:hidden;
+}
+
+.generic-card__tag-content {
+    margin-top: auto; /* push content to bottom */
+    margin-bottom: 0.7rem;
+}

@@ -1,3 +1,7 @@
+.card-layout__card {
+    box-sizing: border-box;
+}
+
 /** wide screens have four columns */
 @media (min-width: 900px) {
     .card-layout__card {

@@ -1,3 +1,7 @@
 .manual-card__image {
     width: 100%;
 }
+
+.manual-card__tag-content {
+    background-color: red;
+}
