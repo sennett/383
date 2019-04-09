@@ -1,19 +1,19 @@
 .generic-card {
-    border: solid 1px grey;
+    border: solid 1px #dedede;
     margin: 1rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
+    padding: 1.25rem;
+    border-radius: 0.2rem;
 }
 
 .generic-card__tag {
     position: absolute;
-    height: 5rem;
-    width: 4rem;
+    height: 3.5rem;
+    width: 3rem;
     margin-top: -2rem;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     color: white;
     font-family: serif;
-    font-size:1.5rem;
+    font-size:1.2rem;
     box-sizing: border-box;
     display: flex;
     justify-content: center;

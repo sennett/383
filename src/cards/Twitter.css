@@ -1,7 +1,14 @@
 .twitter-card__author {
     font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    text-align: center;
 }
 
 .twitter-card__tweet {
     font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    overflow: hidden;
 }
