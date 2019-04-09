@@ -1,6 +1,6 @@
 import React from 'react';
 import GenericCard from './GenericCard'
-import './ManualCard.css'
+import './Manual.css'
 
 const Manual = ({item}) => {
     const tagContent = <div className="manual-card__tag-content">AFF</div>;
