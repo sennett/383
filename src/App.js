@@ -16,8 +16,7 @@ class App extends Component {
     render() {
         return (
             <Masonry className="card-layout">
-                {data.items.filter((item) => ['Manual','Twitter'].includes(item.service_name)).map((item, index) => {
-                    item.item_data.image_url = "https://placekitten.com/g/200/300";
+                {data.items.map((item, index) => {
                     const TagName = cardComponents[item.service_name];
                     return (
                         <div className="card-layout__card"  key={index}>
@@ -31,4 +30,3 @@ class App extends Component {
 }
 
 export default App;
-
