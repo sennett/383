@@ -1,6 +1,4 @@
-import data from '../data.js';
-
-function rootReducer (state = data, action) {
+function rootReducer (state) {
     return state
 }
 

@@ -11,10 +11,10 @@ const cardComponents = {
     Instagram: Instagram
 };
 
-const SocialList = ({items}) => {
+const SocialList = ({socialList}) => {
     return (
     <Masonry className="card-layout">
-        {items.map((item, index) => {
+        {socialList.map((item, index) => {
             const TagName = cardComponents[item.service_name];
             return (
                 <div className="card-layout__card" key={index}>
