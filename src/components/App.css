@@ -1,0 +1,52 @@
+body {
+    font-size: 62.5%;
+    color: grey;
+}
+
+p {
+    font-size: 1.4em;
+    color: grey
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.card-layout__card {
+    box-sizing: border-box;
+}
+
+/** medium-large screens have three columns */
+@media (min-width: 550px) {
+    .card-layout__card {
+        width: 33%;
+    }
+}
+
+/** small-medium screens have two columns */
+@media (min-width: 400px) and (max-width: 549px) {
+    .card-layout__card {
+        width: 50%;
+    }
+}
+
+/** small screens have one columns */
+@media (max-width: 399px) {
+    .card-layout__card {
+        width: 100%;
+    }
+}
+
+.page-layout__load-more {
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: solid 1px #dedede;
+    font-size: 2em;
+    margin: 0 auto 2em;
+    display: block;
+}
