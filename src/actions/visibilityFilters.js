@@ -6,6 +6,6 @@ export const setVisibilityFilter = (filter) => ({
 export const VisibilityFilters = {
     SHOW_ALL: 'SHOW_ALL',
     SHOW_AFF: 'SHOW_AFF',
-    TWEETS: 'TWEETS',
-    INSTA_STORIES: 'INSTA_STORIES'
+    SHOW_TWEETS: 'SHOW_TWEETS',
+    SHOW_INSTA_STORIES: 'SHOW_INSTA_STORIES'
 };

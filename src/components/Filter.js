@@ -7,8 +7,8 @@ const Filter = function () {
         <div>
             <FilterLink type={VisibilityFilters.SHOW_ALL}>All</FilterLink>
             <FilterLink type={VisibilityFilters.SHOW_AFF}>AFF</FilterLink>
-            <FilterLink type={VisibilityFilters.TWEETS}>Tweets</FilterLink>
-            <FilterLink type={VisibilityFilters.INSTA_STORIES}>Insta Stories</FilterLink>
+            <FilterLink type={VisibilityFilters.SHOW_TWEETS}>Tweets</FilterLink>
+            <FilterLink type={VisibilityFilters.SHOW_INSTA_STORIES}>Insta Stories</FilterLink>
         </div>
     );
 };

@@ -1,15 +1,15 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { setVisibilityFilter } from '../actions/visibilityFilters'
+import { getFilter } from '../reducers/filterReducer'
 
 const mapStateToProps = (state, ownProps) => ({
-    active: state.filter === ownProps.type
+    active: getFilter(state) === ownProps.type
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
     onClick: () => dispatch(setVisibilityFilter(ownProps.type))
 });
-
 
 const FilterLink = (props) => {
     const className = props.active ? 'active' : 'inactive';
