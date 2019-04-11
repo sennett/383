@@ -1,0 +1,23 @@
+.filter {
+    display: flex;
+    font-size: 1.4rem;
+}
+
+.filter__filter-link {
+    border: solid 1px #dedede;
+    display:block;
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.filter__filter-link:hover {
+    text-decoration: none;
+    border-color: red;
+}
+
+.filter__filter-link--active {
+    border-color: red;
+}
+

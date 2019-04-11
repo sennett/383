@@ -12,9 +12,9 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
 });
 
 const FilterLink = (props) => {
-    const className = props.active ? 'active' : 'inactive';
+    const className = props.active ? 'filter__filter-link--active' : 'filter__filter-link--inactive';
     return (
-        <a onClick={props.onClick} className={className}>{props.children}</a>
+        <a onClick={props.onClick} className={`filter__filter-link  ${className}`}>{props.children}</a>
     );
 };
 
