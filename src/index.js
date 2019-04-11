@@ -10,9 +10,7 @@ import App from './components/App';
 import data from './data.js';
 
 const initialState = {
-    filter: 'All',
-    socialList: data.items,
-    loading: false
+    socialList: data.items
 };
 
 const store = createStore(rootReducer, initialState);
