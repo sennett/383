@@ -9,15 +9,10 @@ import thunk from 'redux-thunk'
 import rootReducer from './reducers/rootReducer';
 import './index.css';
 import App from './components/App';
-import data from './data.js';
-
-const initialState = {
-    socialList: data.items
-};
 
 const middleWare = [ thunk, createLogger() ];
 
-const store = createStore(rootReducer, initialState, applyMiddleware(...middleWare));
+const store = createStore(rootReducer, applyMiddleware(...middleWare));
 
 render(
     <Provider store={store}>
