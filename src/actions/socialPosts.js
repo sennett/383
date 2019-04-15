@@ -1,7 +1,7 @@
 import { getSocialListCount } from '../reducers/socialListReducer'
 
 const API_PAGE_SIZE = 20; // API limit
-const JUICER_POSTS_ENDPOINT = "http://private-cc77e-aff.apiary-mock.com/posts";
+const JUICER_POSTS_ENDPOINT = "https://private-cc77e-aff.apiary-mock.com/posts";
 
 
 export const fetchPosts = (dispatch, getState) => {
