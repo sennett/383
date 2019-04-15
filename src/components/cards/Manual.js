@@ -1,10 +1,11 @@
 import React from 'react';
 import GenericCard from './GenericCard'
 import './Manual.css'
+import kittenUrl from './kittenUrl'
 
 const Manual = ({item}) => {
     const tagContent = <div className="manual-card__tag-content">AFF</div>;
-    item.image_url = "https://placekitten.com/g/200/300";
+    item.image_url = kittenUrl();
     return (
         <GenericCard tagContent={tagContent} tagClass="manual-card__tag-content">
             <div>
