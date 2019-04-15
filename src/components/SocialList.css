@@ -1,0 +1,24 @@
+.card-layout__card {
+    box-sizing: border-box;
+}
+
+/** medium-large screens have three columns */
+@media (min-width: 700px) {
+    .card-layout__card {
+        width: 33%;
+    }
+}
+
+/** small-medium screens have two columns */
+@media (min-width: 400px) and (max-width: 699px) {
+    .card-layout__card {
+        width: 50%;
+    }
+}
+
+/** small screens have one columns */
+@media (max-width: 399px) {
+    .card-layout__card {
+        width: 100%;
+    }
+}

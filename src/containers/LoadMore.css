@@ -1,0 +1,8 @@
+.load-more {
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: solid 1px #dedede;
+    font-size: 2em;
+    margin: 0 auto 2em;
+    display: block;
+}

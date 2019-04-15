@@ -1,4 +1,11 @@
 body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font-size: 62.5%;
     color: grey;
 }
@@ -15,38 +22,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-.card-layout__card {
-    box-sizing: border-box;
-}
-
-/** medium-large screens have three columns */
-@media (min-width: 550px) {
-    .card-layout__card {
-        width: 33%;
-    }
-}
-
-/** small-medium screens have two columns */
-@media (min-width: 400px) and (max-width: 549px) {
-    .card-layout__card {
-        width: 50%;
-    }
-}
-
-/** small screens have one columns */
-@media (max-width: 399px) {
-    .card-layout__card {
-        width: 100%;
-    }
-}
-
-.page-layout__load-more {
-    border-radius: 0.5rem;
-    background-color: transparent;
-    border: solid 1px #dedede;
-    font-size: 2em;
-    margin: 0 auto 2em;
-    display: block;
 }

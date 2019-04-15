@@ -4,6 +4,7 @@ import React from "react";
 import Manual from './cards/Manual';
 import Instagram from './cards/Instagram';
 import Twitter from './cards/Twitter';
+import './SocialList.css'
 
 const cardComponents = {
     Manual: Manual,
