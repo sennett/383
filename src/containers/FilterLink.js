@@ -8,7 +8,10 @@ const mapStateToProps = (state, ownProps) => ({
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-    onClick: () => dispatch(setVisibilityFilter(ownProps.type))
+    onClick: () => {
+        ownProps.onClick();
+        dispatch(setVisibilityFilter(ownProps.type));
+    }
 });
 
 const FilterLink = (props) => {

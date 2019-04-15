@@ -1,6 +1,11 @@
 .filter {
-    display: flex;
     font-size: 1.4rem;
+    user-select: none;
+    margin: 1rem;
+}
+
+.filter__filters {
+    display: flex;
 }
 
 .filter__filter-link {
@@ -21,3 +26,37 @@
     border-color: red;
 }
 
+.filter__mobile-toggle {
+    display: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+/** MOBILE */
+
+@media (max-width: 550px) {
+    .filter__mobile-toggle {
+        display: block;
+    }
+
+    .filter__filters {
+        max-height: 0;
+        transition: max-height 0.15s ease-out;
+        overflow: hidden;
+        display: block;
+    }
+
+    .filter__filters.filter--mobile__filter-links--open {
+        max-height: 500px;
+        transition: max-height 0.25s ease-in;
+    }
+
+    .filter__filter-link {
+        border: none;
+        border-left: solid 3px #dedede;
+    }
+
+    .filter__filter-link--active {
+        border-color: red;
+    }
+}
