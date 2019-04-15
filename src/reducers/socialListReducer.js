@@ -1,3 +1,15 @@
-export const socialList = (state = []) => state;
+export const socialList = (state = [], action) => {
 
-export const getSocialList = (state) => state.socialList
+    if (action.type === 'RECEIVE_POSTS') {
+        return [
+            ...state,
+            ...action.posts
+        ]
+    }
+
+    return state;
+};
+
+export const getSocialList = (state) => state.socialList;
+
+export const getSocialListCount = (state) => state.socialList.length;

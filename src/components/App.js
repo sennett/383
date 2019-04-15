@@ -3,7 +3,7 @@ import './App.css';
 
 import Filter from './Filter'
 import VisibleSocialList from '../containers/VisibleSocialList'
-import LoadMore from './LoadMore'
+import LoadMore from '../containers/LoadMore'
 
 class App extends Component {
     render() {

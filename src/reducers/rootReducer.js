@@ -1,9 +1,8 @@
 import {combineReducers} from "redux";
 import {filter, getFilter} from "./filterReducer";
-import {socialList, getSocialList} from "./socialListReducer";
+import {getSocialList, socialList} from "./socialListReducer";
 import {VisibilityFilters} from "../actions/visibilityFilters";
-
-const loading = (state = false) => state;
+import { loading } from "./loadingReducer";
 
 export default combineReducers({
     filter,
