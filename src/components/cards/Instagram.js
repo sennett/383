@@ -1,13 +1,11 @@
 import GenericCard from "./GenericCard";
 import React from "react";
-import './Instagram.css'
-import kittenUrl from './kittenUrl'
+import './Instagram.css';
 
 import { autoLinkHashtags } from 'twitter-text'
 
 const Instagram = ({item}) => {
     const tagContent = "📷";
-    item.image.medium = kittenUrl();
     const caption = autoLinkHashtags(item.caption, {
         hashtagUrlBase: 'https://www.instagram.com/explore/tags/',
         targetBlank: true
